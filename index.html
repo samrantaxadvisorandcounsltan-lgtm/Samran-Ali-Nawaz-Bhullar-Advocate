@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samran Tax Advisor & Consultant | Chambers of Samran Ali Nawaz Bhullar Advocate</title>
+  <meta name="description" content="Chambers of Samran Ali Nawaz Bhullar Advocate. High Court Legal Advocacy, FBR Income Tax Filing, Business Registration, and Civil Litigation in Chichawatni & Lahore." />
+  <meta name="keywords" content="Samran Ali Nawaz Bhullar, Advocate High Court, Tax Consultant Chichawatni, Income Tax Filing, FBR Return, Business Registration, SECP, Legal Advice" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* CSS RESET & MODERN DESIGN SYSTEM */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-primary: #0b1120;
+      --bg-surface: #0f172a;
+      --bg-card: #1e293b;
+      --bg-card-hover: #334155;
+      --gold-primary: #f59e0b;
+      --gold-light: #fbbf24;
+      --text-white: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --border-color: #334155;
+      --border-light: rgba(255, 255, 255, 0.08);
+      --emerald-accent: #10b981;
+      --font-display: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-primary);
+      color: var(--text-white);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* HEADER & NAVIGATION */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-white);
+      transition: color 0.2s ease;
+    }
+
+    .brand:hover .brand-title {
+      color: var(--gold-light);
+    }
+
+    .brand-subtitle {
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: var(--gold-primary);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 1.75rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .btn-header {
+      background: var(--gold-primary);
+      color: #0b1120;
+      font-weight: 700;
+      font-size: 0.8125rem;
+      padding: 0.6rem 1.25rem;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .btn-header:hover {
+      background: var(--gold-light);
+      transform: translateY(-1px);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      position: relative;
+      padding: 5.5rem 0 5rem;
+      background: radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.08) 0%, transparent 50%),
+                  linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-primary) 100%);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1rem;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: var(--gold-primary);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: 2.75rem;
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero h1 span {
+      color: var(--gold-light);
+    }
+
+    .hero-lead {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .btn-primary {
+      background: var(--gold-primary);
+      color: #0b1120;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      box-shadow: 0 8px 20px rgba(245, 158, 11, 0.25);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: var(--bg-card);
+      color: var(--text-white);
+      border: 1px solid var(--border-color);
+      font-weight: 600;
+      font-size: 0.9375rem;
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--gold-primary);
+      color: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-light);
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+
+    .badge-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .badge-item strong {
+      color: var(--text-white);
+    }
+
+    .hero-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      position: relative;
+    }
+
+    .profile-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .profile-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 2px solid var(--gold-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold-light);
+    }
+
+    .profile-name {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-white);
+    }
+
+    .profile-title {
+      font-size: 0.8125rem;
+      color: var(--gold-primary);
+    }
+
+    .stat-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .stat-box {
+      background: var(--bg-card);
+      padding: 1rem;
+      border-radius: 10px;
+      border: 1px solid var(--border-light);
+    }
+
+    .stat-number {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      font-family: var(--font-display);
+    }
+
+    .stat-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.25rem;
+    }
+
+    /* SECTIONS COMMON */
+    section {
+      padding: 5rem 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .section-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gold-primary);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 2.15rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-white);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .about-text h3 {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      color: var(--text-white);
+      margin-bottom: 1rem;
+    }
+
+    .about-text p {
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .about-points {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .about-points li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--text-white);
+    }
+
+    .about-points svg {
+      width: 18px;
+      height: 18px;
+      color: var(--gold-primary);
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+    }
+
+    .chambers-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 2rem;
+    }
+
+    .chambers-box h4 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: var(--gold-light);
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .chamber-entry {
+      margin-bottom: 1.25rem;
+    }
+
+    .chamber-entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .chamber-entry strong {
+      display: block;
+      color: var(--text-white);
+      font-size: 0.9375rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .chamber-entry p {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      line-height: 1.5;
+    }
+
+    /* SERVICES SECTION */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+    }
+
+    .service-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 2.25rem 1.75rem;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--gold-primary);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.35);
+      background: var(--bg-card);
+    }
+
+    .service-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-light);
+      margin-bottom: 1.5rem;
+    }
+
+    .service-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: var(--text-white);
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .service-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.25rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+    }
+
+    .service-features li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .service-features li::before {
+      content: "✓";
+      color: var(--emerald-accent);
+      font-weight: 700;
+    }
+
+    /* CLIENT REVIEWS / TESTIMONIALS SECTION */
+    .reviews {
+      background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-surface) 100%);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+    }
+
+    .review-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 2rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+
+    .review-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold-primary);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    .review-stars {
+      color: var(--gold-primary);
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+    }
+
+    .review-quote {
+      color: var(--text-white);
+      font-size: 0.92rem;
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .review-author {
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .author-name {
+      font-family: var(--font-display);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-white);
+    }
+
+    .author-role {
+      font-size: 0.78rem;
+      color: var(--gold-light);
+      margin-top: 0.2rem;
+    }
+
+    .author-case {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+
+    /* CONTACT SECTION */
+    .contact {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-color);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .contact-icon-wrapper {
+      width: 44px;
+      height: 44px;
+      background: rgba(245, 158, 11, 0.12);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-light);
+      flex-shrink: 0;
+    }
+
+    .contact-details strong {
+      display: block;
+      color: var(--text-white);
+      font-size: 0.9375rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-details p, .contact-details a {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+
+    .contact-details a:hover {
+      color: var(--gold-light);
+    }
+
+    .contact-form-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2.25rem;
+    }
+
+    .contact-form-box h3 {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      color: var(--text-white);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-form-box p {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-control {
+      width: 100%;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+      color: var(--text-white);
+      outline: none;
+      font-family: var(--font-body);
+      transition: border-color 0.2s ease;
+    }
+
+    .form-control:focus {
+      border-color: var(--gold-primary);
+    }
+
+    textarea.form-control {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .btn-submit {
+      width: 100%;
+      background: var(--gold-primary);
+      color: #0b1120;
+      font-weight: 700;
+      font-size: 0.9375rem;
+      padding: 0.85rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .btn-submit:hover {
+      background: var(--gold-light);
+      box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #060913;
+      border-top: 1px solid var(--border-color);
+      padding: 3.5rem 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand p {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      max-width: 360px;
+      margin-top: 0.75rem;
+      line-height: 1.6;
+    }
+
+    .footer-links h5 {
+      font-family: var(--font-display);
+      font-size: 0.875rem;
+      color: var(--text-white);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      font-size: 0.8125rem;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-color);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+
+    /* FLOATING WHATSAPP BUTTON */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      color: #fff;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+      z-index: 999;
+      transition: transform 0.2s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.08);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 992px) {
+      .hero-grid, .about-grid, .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+      .services-grid, .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .hero h1 {
+        font-size: 2.15rem;
+      }
+      .services-grid, .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+      .stat-list {
+        grid-template-columns: 1fr;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#home" class="brand">
+        <span class="brand-title">Samran Tax Advisor & Consultant</span>
+        <span class="brand-subtitle">Chambers of Samran Ali Nawaz Bhullar Advocate</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn-header">Book Consultation</a>
+    </div>
+  </header>
+
+  <!-- HOME (HERO) -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="kicker">Advocate High Court & Tax Consultant</div>
+        <h1>Authoritative <span>Tax Advisory</span> & Legal Advocacy</h1>
+        <p class="hero-lead">
+          Strategic FBR income tax compliance, corporate business registration, and robust courtroom litigation across Punjab and Superior Courts. Led by Samran Ali Nawaz Bhullar Advocate.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">
+            Schedule Appointment
+          </a>
+          <a href="https://wa.me/923090412874?text=Hello%20Samran%20Advocate,%20I%20need%20tax%20or%20legal%20counsel" target="_blank" class="btn-secondary">
+            Chat on WhatsApp
+          </a>
+        </div>
+
+        <div class="hero-badges">
+          <div class="badge-item">
+            <span>📍</span>
+            <span>Chichawatni: <strong>Chamber 87, Tehsil Courts</strong></span>
+          </div>
+          <div class="badge-item">
+            <span>📍</span>
+            <span>Lahore: <strong>Walton Road Cantt</strong></span>
+          </div>
+          <div class="badge-item">
+            <span>📞</span>
+            <span>Direct: <strong>0309-0412874</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="profile-meta">
+          <div class="profile-avatar">S</div>
+          <div>
+            <div class="profile-name">Samran Ali Nawaz Bhullar</div>
+            <div class="profile-title">Advocate High Court & Corporate Tax Counsel</div>
+          </div>
+        </div>
+
+        <div class="stat-list">
+          <div class="stat-box">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Confidential & Bar Council Compliant</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">FBR ATL</div>
+            <div class="stat-label">Active Taxpayer & NTN Verified</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">2 Offices</div>
+            <div class="stat-label">Tehsil Courts & Lahore Cantt</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Urgent Legal Defense Cell</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About the Chambers</span>
+        <h2 class="section-title">Legal Integrity & Financial Precision</h2>
+        <p class="section-desc">Delivering tailored advisory for corporate enterprises, business owners, and private individuals.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>Chambers of Samran Ali Nawaz Bhullar Advocate</h3>
+          <p>
+            We combine deep knowledge of Pakistan’s tax statutes—including the Income Tax Ordinance 2001 and Sales Tax Act 1990—with aggressive litigation skills in civil and appellate courts.
+          </p>
+          <p>
+            Whether resolving contentious scrutiny notices from the Federal Board of Revenue (FBR), structuring private limited corporate entities under SECP, or defending clients in civil property matters, our practice is grounded in professional confidentiality and thorough legal preparation.
+          </p>
+
+          <ul class="about-points">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Advocate High Court licensed by the Punjab Bar Council</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Authorized Income Tax Practitioner with direct FBR IRIS e-filing authority</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Offices at Tehsil Courts Chichawatni and Walton Road Lahore</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="chambers-box">
+          <h4>Chambers Locations</h4>
+          
+          <div class="chamber-entry">
+            <strong>Chichawatni Chamber:</strong>
+            <p>Chamber No. 87, Tehsil Courts Complex, Chichawatni, District Sahiwal, Punjab.</p>
+          </div>
+
+          <div class="chamber-entry" style="margin-top: 1.25rem;">
+            <strong>Lahore Chamber:</strong>
+            <p>Walton Road, Lahore Cantt, Punjab.</p>
+          </div>
+
+          <div class="chamber-entry" style="margin-top: 1.25rem;">
+            <strong>Consultation Hours:</strong>
+            <p>Monday – Saturday: 08:30 AM to 07:30 PM (Sunday by appointment)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES (Tax Filing, Legal Advice, Business Registration) -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Practice Areas</span>
+        <h2 class="section-title">Services & Legal Advisory</h2>
+        <p class="section-desc">Comprehensive solutions covering income taxation, regulatory corporate registration, and civil court defense.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Tax Filing -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3>Tax Filing & Compliance</h3>
+          <p>
+            Complete FBR e-filing for salaried, individual business owners, and partnerships. Wealth statement reconciliation and ATL activation.
+          </p>
+          <ul class="service-features">
+            <li>National Tax Number (NTN) Registration</li>
+            <li>Annual Income Tax Return (IRIS) E-Filing</li>
+            <li>Active Taxpayer List (ATL) 100% Surcharge Removal</li>
+            <li>Section 122 & 177 FBR Audit Notices Defense</li>
+            <li>Withholding & Sales Tax Provincial Filings (PRA/SRB)</li>
+          </ul>
+        </div>
+
+        <!-- Service 2: Legal Advice -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Legal Advice & Court Advocacy</h3>
+          <p>
+            Authoritative litigation across District and High Courts. Civil property disputes, stay orders, recovery suits, and criminal bail representation.
+          </p>
+          <ul class="service-features">
+            <li>Civil Property & Commercial Land Disputes</li>
+            <li>Injunctions, Restraining & Stay Orders</li>
+            <li>Order 37 Summary Recovery Lawsuits</li>
+            <li>Appellate Revenue & High Court Writ Petitions</li>
+            <li>24/7 Urgent Criminal Bail & Defense Cell</li>
+          </ul>
+        </div>
+
+        <!-- Service 3: Business Registration -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3>Business Registration</h3>
+          <p>
+            End-to-end statutory formation of companies, partnerships, sole proprietorships, and trademark/intellectual property filings.
+          </p>
+          <ul class="service-features">
+            <li>SECP Private Limited (Pvt Ltd) Company Incorporation</li>
+            <li>Partnership Firm Registration (Form C / Registrar)</li>
+            <li>Sole Proprietorship Bank Opening Certificates</li>
+            <li>Chamber of Commerce (LCCI / SCCI) Membership</li>
+            <li>IPO Trademark & Brand Protection Filing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS & CLIENT TESTIMONIALS SECTION -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Client Testimonials</span>
+        <h2 class="section-title">Client Reviews & Trusted Feedback</h2>
+        <p class="section-desc">Attributable feedback from corporate business leaders, commercial property owners, and families represented by our chambers.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">
+              "When our company received an FBR audit notice with an inflated demand threatening frozen bank accounts, Adv. Samran Ali Nawaz Bhullar stepped in immediately. His precise reconciliation and authoritative defense before the Commissioner completely reversed the demand."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-name">Tariq Mahmood Sheikh</div>
+            <div class="author-role">Managing Director, Horizon Agro Chemicals</div>
+            <div class="author-case">Matter: Corporate Tax Audit & Section 122 Defense</div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">
+              "Their mastery of land revenue records, registry deeds, and civil court litigation is exceptional. In a contentious commercial plaza dispute where bad-faith claimants obtained an unlawful stay order, his litigation team had the injunction vacated in record time."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-name">Barrister Farrukh Qureshi (Retd.)</div>
+            <div class="author-role">Commercial Real Estate Investor</div>
+            <div class="author-case">Matter: Commercial Property Dispute & Stay Vacation</div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-quote">
+              "When an unforeseen family dispute resulted in an aggressive midnight FIR, their emergency defense team responded at 2:00 AM. By midday, protective pre-arrest bail was secured from the High Court. Their command of criminal law saved us from public embarrassment."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-name">Dr. Shahbaz Alam</div>
+            <div class="author-role">Healthcare Director, Apex Diagnostic Centre</div>
+            <div class="author-case">Matter: Emergency Pre-Arrest Bail & Criminal Defense</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Direct Intake</span>
+        <h2 class="section-title">Schedule a Consultation</h2>
+        <p class="section-desc">Reach out directly via phone, WhatsApp, or through the intake form below.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-details">
+              <strong>Direct Chamber Phone</strong>
+              <p><a href="tel:03090412874">0309-0412874</a></p>
+              <p style="font-size: 0.75rem; color: var(--emerald-accent);">Available 24/7 for urgent legal calls</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <div class="contact-details">
+              <strong>Instant WhatsApp Messaging</strong>
+              <p><a href="https://wa.me/923090412874" target="_blank">+92 309 0412874</a></p>
+              <p style="font-size: 0.75rem; color: var(--text-muted);">Send notice copies or tax questions</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-wrapper">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-details">
+              <strong>Chamber Locations</strong>
+              <p>Chamber No. 87, Tehsil Courts, Chichawatni</p>
+              <p>Walton Road, Lahore Cantt, Punjab</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consultation Form -->
+        <div class="contact-form-box">
+          <h3>Request Consultation</h3>
+          <p>Fill out the details below to generate an immediate consultation inquiry.</p>
+
+          <form id="consultForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" class="form-control" placeholder="e.g. Muhammad Ahmad" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phoneNum">Phone / WhatsApp Number</label>
+              <input type="tel" id="phoneNum" class="form-control" placeholder="0300-1234567" required />
+            </div>
+
+            <div class="form-group">
+              <label for="serviceType">Service Required</label>
+              <select id="serviceType" class="form-control" required>
+                <option value="Tax Filing">Income Tax Return E-Filing & ATL</option>
+                <option value="Legal Advice">Civil / Criminal Court Litigation</option>
+                <option value="Business Registration">SECP Company & Business Registration</option>
+                <option value="Audit Notice Defense">FBR Section 122/177 Audit Defense</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="caseDesc">Brief Summary of Case / Query</label>
+              <textarea id="caseDesc" class="form-control" placeholder="Describe your tax notice, business requirement, or court matter..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              Send Consultation Request via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand-title">Samran Tax Advisor & Consultant</span>
+          <span class="brand-subtitle" style="display:block; margin-top: 4px;">Chambers of Samran Ali Nawaz Bhullar Advocate</span>
+          <p>
+            Authoritative income tax e-filing, corporate commercial law, and courtroom representation across High Courts, Sessions Courts, and Appellate Revenue Tribunals.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h5>Practice Areas</h5>
+          <ul>
+            <li><a href="#services">Tax Return E-Filing</a></li>
+            <li><a href="#services">NTN & ATL Active List</a></li>
+            <li><a href="#services">FBR Audit Defense</a></li>
+            <li><a href="#services">Civil Court Litigation</a></li>
+            <li><a href="#services">SECP Company Formation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h5>Quick Access</h5>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Chambers</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Client Reviews</a></li>
+            <li><a href="#contact">Contact Offices</a></li>
+            <li><a href="tel:03090412874">Emergency Hotline</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © <span id="year"></span> Samran Tax Advisor & Consultant. All rights reserved.
+        </div>
+        <div>
+          Licensed Advocate High Court & Tax Practitioner
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/923090412874?text=Hello%20Samran%20Advocate,%20I%20need%20tax%20or%20legal%20consultation" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.983.538 1.834.825 2.791.826h.005c3.181 0 5.769-2.587 5.77-5.767.001-3.182-2.585-5.771-5.775-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.074-2.027-.478-1.699-.705-2.779-2.453-2.865-2.568-.084-.115-.693-.923-.693-1.761s.437-1.25.592-1.421c.156-.171.341-.214.455-.214.114 0 .228.001.328.006.105.006.246-.04.385.295.144.348.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.186-.173.287l-.26.304c-.087.098-.178.204-.076.38.102.176.452.747.969 1.209.667.595 1.229.779 1.405.867.176.088.279.076.383-.043.104-.12.443-.516.562-.693.118-.176.237-.147.399-.088.162.059 1.026.484 1.202.572.176.088.293.132.336.205.044.074.044.428-.1 1.233z"/>
+    </svg>
+  </a>
+
+  <!-- SCRIPT -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      var name = document.getElementById('fullName').value;
+      var phone = document.getElementById('phoneNum').value;
+      var service = document.getElementById('serviceType').value;
+      var desc = document.getElementById('caseDesc').value;
+
+      var text = "Hello Samran Ali Nawaz Bhullar Advocate,\n\n" +
+                 "I am requesting a consultation from your portfolio website:\n" +
+                 "• Name: " + name + "\n" +
+                 "• Phone: " + phone + "\n" +
+                 "• Service: " + service + "\n" +
+                 "• Summary: " + (desc ? desc : "None provided");
+
+      var encoded = encodeURIComponent(text);
+      var waUrl = "https://wa.me/923090412874?text=" + encoded;
+      window.open(waUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
